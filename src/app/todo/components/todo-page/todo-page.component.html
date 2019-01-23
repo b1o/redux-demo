@@ -1,0 +1,27 @@
+<div style="width: 600px; margin:auto">
+  <h1>Todos</h1>
+  <mat-card style="padding-bottom: 0;">
+    <mat-card-content>
+      <div style="padding-bottom: 5px;">
+        <app-add-todo-dialog (addTodo)="onTodo($event)"></app-add-todo-dialog>
+      </div>
+      <mat-divider></mat-divider>
+      <div style="padding:10px 0px">
+          <app-todo-filter></app-todo-filter>
+      </div>
+      <mat-divider></mat-divider>
+
+      <app-todo-list></app-todo-list>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<!-- <mat-card class="messages">
+  <div
+    class="message"
+    [ngClass]="{ own: m.from == 'me' }"
+    *ngFor="let m of messages"
+  >
+    {{ m.from }} --- {{ m.text }}
+  </div>
+</mat-card> -->

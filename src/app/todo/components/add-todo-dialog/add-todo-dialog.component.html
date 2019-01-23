@@ -1,0 +1,9 @@
+<div class="add-todo-wrapper">
+  <input
+    type="text"
+    class="inline-input"
+    [(ngModel)]="description"
+    placeholder="Create some todos..."
+  />
+  <button [disabled]="!description" (click)="onAdd()" mat-mini-fab color="primary"><mat-icon>add</mat-icon></button>
+</div>

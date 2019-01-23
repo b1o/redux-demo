@@ -1,0 +1,13 @@
+<mat-list>
+  <app-todo-item
+    *ngFor="let todo of (filteredTodos$ | async)"
+    [item]="todo"
+    (select)="onComplete($event)"
+    (removed)="onItemRemoved($event)"
+  ></app-todo-item>
+</mat-list>
+
+<h2 style="padding:16px 0;" *ngIf="(filteredTodos$ | async).length === 0">
+  No todos for the current filter.
+</h2>
+

@@ -1,0 +1,6 @@
+<mat-list-item class="item" [ngClass]="{ completed: item.completed }">
+  <mat-checkbox (change)="onChange($event)" [checked]="item.completed"> {{ item.description }}</mat-checkbox>
+
+  <button mat-button (click)="remove()" ><mat-icon>close</mat-icon></button>
+</mat-list-item>
+

@@ -1,0 +1,17 @@
+.messages {
+  width: 40%;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+
+  .message.own {
+    // margin-left: auto;
+    align-self: flex-end;
+  }
+
+  .message {
+    // margin-right: auto;
+    align-self: flex-start;
+  }
+}
+

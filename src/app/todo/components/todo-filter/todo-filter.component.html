@@ -1,0 +1,7 @@
+<mat-button-toggle-group  appearance="legacy" #group="matButtonToggleGroup">
+  <mat-button-toggle [checked]="currentFilter == 'done'" color="accent" (click)="showCompletedOnly()"> Done </mat-button-toggle>
+  <mat-button-toggle [checked]="currentFilter == 'all'" color="primary" (click)="showAll()"> All </mat-button-toggle>
+  <mat-button-toggle [checked]="currentFilter == 'pending'" color="primary" (click)="showUncompletedOnly()">
+    Pending
+  </mat-button-toggle>
+</mat-button-toggle-group>
